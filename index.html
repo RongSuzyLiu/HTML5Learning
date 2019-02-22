@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Cheat Sheet</title>
+	</head>
+	<body>
+		<!-- Headings -->
+
+		<h1 title="My Company">About Us</h1>
+		<h2>Heading Two</h2>
+		<h3>Heading Three</h3>
+		<h4>Heading Four</h4>
+		<h5>Heading Five</h5>
+		<h6>Heading Six</h6>
+
+
+		<!-- Paragraphs -->
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt <strong>ut labore et dolore magna </strong>aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor <em>in reprehenderit in voluptate velit esse
+			cillum dolore eu </em>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod labore et 
+			tempor incididunt ut dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud <a href="about.html">exercitation ullamco laboris</a> nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in  
+			cillum dolore eu reprehenderit <a href="http://google.com" target="_blank">in voluptate velit</a> esse fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+
+		<!-- Lists -->
+
+		<ul> 
+			<li>List Item 1</li>
+			<li>List Item 2</li>
+			<li>List Item 3</li>
+			<li>List Item 4</li>
+		</ul>
+
+		<ol> 
+			<li>List Item 1</li>
+			<li>List Item 2</li>
+			<li>List Item 3</li>
+			<li>List Item 4</li>
+		</ol>
+
+
+		<!-- Table -->
+
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Age</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Rong Liu</td>
+					<td>Suzy@hotmail.com</td>
+					<td>26</td>
+				</tr>
+				<tr>
+					<td>Kenan Yang</td>
+					<td>Kenan@hotmail.com</td>
+					<td>26</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<br>
+		<hr>  <!-- stands for horizontal rule that gives a line -->
+		<br>
+
+
+		<!-- Forms -->
+
+		<form action="process.php" method="POST">
+			<!-- action is to submit the form to a certern page -->
+			<!-- method POST is to add data to a server, another method is GET... -->
+			<!-- this has to do with more advanced server-side programming -->
+
+			<label>First Name</label>
+			<input type="text" name="first-name">
+
+			<label>Last Name</label>
+			<input type="text" name="lastName">
+		</form>
+
+		<br>
+			
+		<form action="process.php" method="POST"> <!-- To contrast with above -->
+			<div>
+				<label>First Name</label>
+				<input type="text" name="first-name" placeholder="Enter First Name Here">
+			</div>
+			<br>
+			<div>
+				<label>Last Name</label>
+				<input type="text" name="lastName">
+			</div>
+			<!-- same code as above, just use <div>content</div> to wrap it and make it vertical/block and thus put First Name and Last Name on two separate lines, because label and input are both inline-->
+			<br>
+			<div>
+				<label>Email</label>
+				<input type="email" name="email">
+				<!-- type could be "text", but a better type is "email" 
+				Has built-in validation function
+				Invalid email address cause error pop-up -->
+			</div>
+			<br>
+			<div>
+				<label>Message</label>
+				<textarea name="message"></textarea>
+				<!-- textarea is like a bigger text input -->
+			</div>
+			<br>
+			<!-- Select List -->
+			<div>
+				<label>Gender</label>
+				<select name="gender">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				<!-- in select tag you give it a name; in option tag you give the name a value. 
+				Why in input tag you don't give it a value? 
+				because the user will put in the value directly; but here, user'll choose the value from a list and you need to define these possible values. -->
+				</select> 
+			</div>  
+			<br>
+			<div>
+				<label>Age:</label>
+				<input type="number" name="age" value="30">
+			</div>
+			<br>
+			<div>
+				<label>Birthday:</label>
+				<input type="date" name="birthday">
+			</div>
+			<br>
+			<!-- Submit Button -->
+			<input type="submit" name="submit" value="Submit">
+		</form>
+
+		
+		<!-- Button (outside the form)-->
+
+		<button>Click Me</button>    <!-- need JavaScript to make it function -->
+
+
+		<!-- Image -->
+		
+		<br>
+
+		<a href="images/pikachu.jpg">
+			<img src="images/pikachu.jpg" alt="My Sample Image" width="200">
+		</a>
+		
+
+		<!-- Quotations -->
+
+		<blockquote cite="http://traversymedia.com">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</blockquote>
+
+		<p>The <abbr title="World Wide Web">WWW</abbr> is awesome</p>
+
+		<p><cite>HTML crash course</cite> by Brad Traversy</p>
+
+		
+	</body> 
+</html>
