@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Cheat Sheet</title>
+	</head>
+	<body>
+		<!-- Headings -->
+
+		<h1>Heading One</h1>
+		<h2>Heading Two</h2>
+		<h3>Heading Three</h3>
+		<h4>Heading Four</h4>
+		<h5>Heading Five</h5>
+		<h6>Heading Six</h6>
+
+		<!-- Paragraphs -->
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt <strong>ut labore et dolore magna </strong>aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor <em>in reprehenderit in voluptate velit esse
+			cillum dolore eu </em>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod labore et 
+			tempor incididunt ut dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud <a href="about.html">exercitation ullamco laboris</a> nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in  
+			cillum dolore eu reprehenderit <a href="http://google.com" target="_blank">in voluptate velit</a> esse fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+		<!-- Lists -->
+
+		<ul> 
+			<li>List Item 1</li>
+			<li>List Item 2</li>
+			<li>List Item 3</li>
+			<li>List Item 4</li>
+		</ul>
+
+		<ol> 
+			<li>List Item 1</li>
+			<li>List Item 2</li>
+			<li>List Item 3</li>
+			<li>List Item 4</li>
+		</ol>
+
+		<!-- Table -->
+
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Age</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Rong Liu</td>
+					<td>Suzy@hotmail.com</td>
+					<td>26</td>
+				</tr>
+				<tr>
+					<td>Kenan Yang</td>
+					<td>Kenan@hotmail.com</td>
+					<td>26</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<br>
+			<!-- line break -->
+		<hr>
+			<!-- stands for horizontal rule that gives a line -->
+		<br>
+
+
+		<!-- Forms -->
+
+		<form action="process.php" method="POST">
+			<!-- action is to submit the form to a certern page -->
+			<!-- method POST is to add data to a server, another method is GET -->
+			<!-- this has to do with more advanced server side programming -->
+			<label>First Name</label>
+			<input type="text" name="first-name">
+
+			<label>Last Name</label>
+			<input type="text" name="lastName">
+		</form>
+
+		<br>
+
+		<form action="process.php" method="POST">
+			<div>
+				<label>First Name</label>
+				<input type="text" name="first-name">
+			</div>
+			<br>
+			<div>
+				<label>Last Name</label>
+				<input type="text" name="lastName">
+			</div>
+			<!-- same code as above, just use <div>content</div> to make it vertical/block and put it on the next line, because label and input are both inline-->
+			<br>
+			<div>
+				<label>Email</label>
+				<input type="email" name="email">
+				<!-- type could use "text", but there is a better type "email" because it has built-in validation function. if you put in invalid email address, there'll be error pop-up -->
+			</div>
+			<br>
+			<div>
+				<label>Message</label>
+				<textarea name="message"></textarea>
+				<!-- textarea is like a bigger text input  -->
+				<!-- could add default text in the content: <textarea name="message">Hi There</textarea> -->
+			</div>
+			<br>
+			<!-- Select List -->
+			<div>
+				<label>Gender</label>
+				<select name="gender">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select> 
+			</div>  
+
+
+		</form>
+		
+
+	</body> 
+</html>
